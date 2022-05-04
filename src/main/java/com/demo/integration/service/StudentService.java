@@ -27,6 +27,7 @@ public class StudentService {
     MessageChannel replyChannel = (MessageChannel) message.getHeaders().getReplyChannel();
     MessageBuilder.fromMessage(message);
     System.out.println("#####################");
+
     System.out.println("Json To Object - " + message.getPayload());
     Student student = (Student) message.getPayload();
     Message<?> newMessage = MessageBuilder.withPayload(student.toString()).build();
