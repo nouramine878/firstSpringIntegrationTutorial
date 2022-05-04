@@ -25,7 +25,6 @@ public class IntegrationController {
 
   @GetMapping(path="/{name}")
   public String getMessageFromIntegrationService(@PathVariable("name") String name) {
-    log.info("some text here");
     log.info("some information here");
     return this.integrationGateway.sendMessage(name);
   }
