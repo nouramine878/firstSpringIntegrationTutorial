@@ -60,6 +60,4 @@ public class IntegrationConfig {
     return router;
   }
 
-
-
 }
