@@ -17,7 +17,7 @@ public class IntegrationService {
     MessageBuilder.fromMessage(message);
     Message<String> newMessage = MessageBuilder
         .withPayload(message.getPayload() + " modified in integration.gateway.channel").build();
-    return  newMessage;
+    return newMessage;
   }
 
 
